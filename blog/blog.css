@@ -1,0 +1,29 @@
+.blog-page .blog-pagination > a,
+.blog-page .blog-pagination > a > i,
+.blog-page .blog-pagination > span {
+    font-size: 15px;
+    font-weight: 900;
+    color: #1d3557;
+}
+
+.blog-page .blog-pagination > a {box-shadow: inset 0 0 0 3px rgba(0,0,0,.05)}
+.blog-page .blog-pagination > a,
+.blog-page .blog-pagination > span {
+    display: inline-block;
+    padding: 5px 15px 6px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.blog-page .blog-pagination > a:hover,
+.blog-page .blog-pagination > a:hover i,
+.blog-page .blog-pagination > span {color: #fff !important;}
+.blog-page .blog-pagination > a:hover,
+.blog-page .blog-pagination > span {
+    background: #1d3557;
+    box-shadow: inset 0 0 0 3px rgba(255,255,255,.4);
+}
+
+@media(max-width: 1399px) {
+    .blog-page .blog-pagination {margin-bottom: 50px;}
+}

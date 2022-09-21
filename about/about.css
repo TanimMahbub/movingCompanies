@@ -1,0 +1,320 @@
+/* about-page start */
+.mission-vission {
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mission figure,
+.vission figure {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,.15);
+}
+
+.mission figure::before,
+.vission figure::before {
+    position: absolute;
+    content: '';
+    width: 120%;
+    height: 120%;
+    background: url(../img/dot.png) repeat 15px 15px;
+    top: -10%;
+    z-index: -1;
+}
+
+.mission figure::before {left: -15%;}
+.vission figure::before {right: -12%;}
+
+.mission-vission section {
+    position: relative;
+    z-index: 1;
+}
+
+.mission-vission .vission section::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: calc(100% + 200px);
+    border: 20px solid rgba(29, 53, 87, .1);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.mission-vission .vission section::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: calc(100% + 50px);
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.mission-vission .mission section::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: calc(100% + 200px);
+    border: 20px solid rgba(29, 53, 87, .1);
+    top: 50%;
+    right: 50%;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.mission-vission .mission section::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: calc(100% + 50px);
+    background: #fff;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.mission-vission section > h2 {
+    font-family: 'Brygada 1918', serif;
+    font-weight: 700;
+    color: #1d3557;
+}
+
+.mission-vission section > p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+}
+
+.fun-facts {
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.fun-facts > h2 {
+    position: absolute;
+    font-size: 200px;
+    white-space: nowrap;
+    font-weight: 900;
+    color: rgba(255,255,255,.05);
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+}
+
+.fun-facts::before,
+.fun-facts::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background: #1d3557;
+}
+
+.fun-facts::before {
+    width: 100%;
+    height: calc(70% - 15px);
+    top: -34px;
+    right: 0;
+    border-radius: 220px 0 0 220px;
+}
+
+.fun-facts::after {
+    width: 100%;
+    height: calc(40% - 20px);
+    bottom: 0;
+    left: 0;
+    border-radius: 0 120px 0 0;
+}
+
+.fun-fact {
+    padding: 30px 15px;
+    background: #1d3557;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: inset 0 0 0 8px rgba(255,255,255,.4), 0 15px 30px -15px rgba(0,0,0,1);
+}
+
+.fun-fact:hover {
+    background: #1d3557;
+}
+
+.fun-fact::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: rgba(255,255,255,.4);
+    top: 20px;
+    right: 20px;
+    transition: all .3s ease;
+}
+
+.fun-fact:hover::before {background: #fff;}
+
+.fun-fact > i {
+    color: #fff;
+    font-size: 80px;
+    margin-top: 20px;
+    text-shadow: 0 4px 4px rgba(255,255,255,.4);
+}
+.fun-fact > p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px -7px 0;
+    padding-bottom: 3px;
+    background: rgba(255,255,255,.4);
+}
+
+.other-sections {
+    padding: 120px 0;
+    background: url(../img/about/03.jpg) no-repeat center center / cover fixed;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.other-sections::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 53, 87, .8);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.other-sections section {
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    border: 10px solid transparent;
+}
+
+.other-sections section::before {
+    position: absolute;
+    content: '';
+    width: 105%;
+    height: 250%;
+    left: 0;
+    top: -80%;
+    transform: rotate(10deg);
+    box-shadow: 
+        inset -5px 0 6px rgba(0, 0, 0, .5),
+        30px 0 30px -20px rgba(0, 0, 0, 1);
+    z-index: -1;
+}
+
+.other-sections section h2 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255,255,255,.6);
+}
+
+.other-sections section > p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.other-sections section > p > a {
+    display: inline-block;
+    padding-right: 16px;
+    color: #fff;
+    font-size: 13px;
+    margin-left: 10px;
+    border-bottom: 1px solid rgba(255,255,255,.6);
+    position: relative;
+}
+
+.other-sections section > p > a > i {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    transition: all .3s ease;
+}
+
+.other-sections section > p > a:hover > i {left: calc(70% + 5px);}
+
+/* responsive */
+@media(max-width: 1199px) {
+    .fun-facts::before,
+    .fun-facts::after {border-radius: 0;}
+    .fun-facts > h2 {font-size: 150px}
+}
+@media(max-width: 991px) {
+    .mission-vission .vission section::before,
+    .mission-vission .mission section::before {height: calc(100% + 150px);}
+    .other-sections {padding: 50px 0}
+    .other-sections section::before {display: none;}
+    .other-sections section {padding: 0;}
+}
+@media(max-width: 767px) {
+    .mission figure::before,
+    .vission figure::before,
+    .mission-vission .vission section::before,
+    .mission-vission .mission section::before {display: none;}
+    .mission-vission section {margin-top: 30px;}
+    .mission-vission {
+        max-width: 100%;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 80px 0;
+    }
+    .fun-facts {padding: 50px 0;}
+    .fun-facts > h2 {
+        font-size: 100px;
+        width: 100%;
+        white-space: normal;
+    }
+}
+@media(max-width: 575px) {
+    .mission-vission {padding: 50px 0 60px}
+    .fun-fact {
+        max-width: 100%;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .fun-facts::before, .fun-facts::after {display: none;}
+    .fun-facts {
+        padding: 30px 0 50px;
+        background: #1d3557;
+    }
+    .fun-facts > h2 {
+        font-size: 100px;
+        text-align: center;
+        inset: initial;
+        transform: translate(0);
+        position: relative;
+    }
+}
+
+@media(max-width: 414px) {
+    .fun-facts > h2 {font-size: 80px}
+}

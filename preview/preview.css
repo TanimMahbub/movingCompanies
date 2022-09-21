@@ -1,0 +1,20 @@
+.preview-page {
+    padding: 100px 0;
+}
+
+.preview-page ol {
+    width: 500px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,.15);
+}
+
+.preview-page ol a {
+    padding: 15px 5px;
+    font-size: 20px;
+    display: block;
+    color: #1d3557;
+}
+
+.preview-page ol li + li a {border-top: 1px solid rgba(0,0,0,.05);}

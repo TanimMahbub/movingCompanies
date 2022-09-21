@@ -1,0 +1,383 @@
+.pageContent-h1 {
+    font-family: 'Brygada 1918',serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,.4);
+    color: #444;
+    text-align: left
+}
+
+.largeCity-section {padding: 0; margin-bottom: 100px;}
+.largeCity-section section>h2 {
+    font-family: 'Brygada 1918',serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 40%);
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+aside .blog-widget {
+    padding: 30px;
+    background: rgba(0,0,0,.03);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1), inset 0 0 5px rgba(0,0,0,.2);
+}
+
+aside .blog-widget + .blog-widget {margin-top: 50px;}
+
+.blog-search {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.blog-search input {
+    width: calc(100% - 30px);
+    height: 50px;
+    padding: 10px;
+}
+
+.blog-search button[type="submit"] {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cost-estimator input,
+.cost-estimator button[type="submit"] {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.cost-estimator button[type="submit"] {
+    background: #1d3557;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}
+
+.blog-widget > h2 {
+    font-family: 'Noto Sans JP',sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.blog-widget.recent-blog-post ul li {
+    padding: 15px;
+    background: rgba(255,255,255,.4);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.blog-widget.recent-blog-post ul li:hover {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 10px rgba(0,0,0,.05);
+}
+.blog-widget.recent-blog-post ul li + li {margin-top: 10px;}
+.blog-widget.recent-blog-post ul li a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blog-widget.recent-blog-post ul li p {
+    font-size: 14px;
+    color: #666;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.blog-widget.blog-tags > a {
+    display: inline-block;
+    padding: 0 8px 2px;
+    border-radius: 3px;
+    margin: 5px 3px;
+    background: #F7F7F7;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.blog-widget.blog-tags > a:hover {
+    background: #1d3557;
+    border: 1px solid #1d3557;
+    color: #fff;
+}
+
+.movers-by {
+    display: block;
+    padding: 18px 40px;
+    border-radius: 5px;
+    background: #1d3557;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,.4);
+}
+
+.movers-by:hover {
+    box-shadow: inset 0 0 0 30px rgba(255,255,255,.3);
+}
+
+.movers-by.active {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.filter-form,
+.movers-by {
+    max-width: 100%;
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-form select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.1) !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.call4support {
+    padding: 20px;
+    border-radius: 5px;
+    background: #1d3557;
+    color: #fff !important;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call4support span {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.call4support i {
+    font-size: 1.6em;
+    padding-right: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.call4support i::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 100%;
+    background: rgba(255,255,255,.4);
+    border-radius: 5px;
+    right: 0;
+    top: 0;
+}
+
+.movers-by-city > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    background: rgba(255,255,255,.6);
+    border-left: 5px solid transparent;
+}
+
+.movers-by-city > a + a {margin-top: 10px;}
+.movers-by-city > a > span + span {font-weight: 700;}
+.movers-by-city > a:hover {
+    background: rgba(29, 53, 87, .05);
+    border-left: 5px solid #1d3557;
+}
+
+.moversList-by-routes {
+    padding: 30px;
+    background: rgba(0,0,0,.03);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1), inset 0 0 5px rgba(0,0,0,.2);
+    margin: 50px 0 30px;
+}
+
+.by-routes {
+    display: block;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    background: rgba(255,255,255,.4);
+    overflow: hidden;
+    position: relative;
+}
+
+.by-routes:hover {
+    background: rgba(255,255,255,1);
+    padding-left: 25px;
+    transition: padding-left .3s ease .2s, background .3s ease;
+}
+
+.by-routes::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: #1d3557;
+    top: 0;
+    left: -6px;
+    transition: all .3s ease;
+}
+
+.by-routes:hover::before {left: 0;}
+
+.text-content {margin: 30px 0}
+
+.text-content h2 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.text-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.text-content p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #343434;
+}
+.text-content p + p {margin-top: 10px;}
+.text-content p a {
+    font-weight: 700;
+    color: #1d3557;
+
+    position: relative;
+    display: inline;
+    background-image: -webkit-gradient(linear,left top,right top,from(currentColor),to(currentColor));
+    background-image: -webkit-linear-gradient(left,currentColor 0,currentColor 100%);
+    background-image: -o-linear-gradient(left,currentColor 0,currentColor 100%);
+    background-image: linear-gradient(to right,currentColor 0,currentColor 100%);
+    background-size: 0 2px;
+    background-position: 0 95%;
+    -webkit-transition: background-size .5s cubic-bezier(0.785,0.135,0.15,0.86) 0s;
+    -o-transition: background-size .5s cubic-bezier(0.785,0.135,0.15,0.86) 0s;
+    transition: background-size .5s cubic-bezier(0.785,0.135,0.15,0.86) 0s;
+    padding: .7% 0;
+    background-repeat: no-repeat;
+    color: inherit;
+}
+
+.text-content p a:hover {
+    background-size: 100% 2px;
+}
+
+.text-content blockquote {
+    padding: 30px;
+    border-radius: 5px;
+    border-left: 10px solid #000;
+    box-shadow: 0 0 15px -5px rgba(0,0,0,.2);
+    margin: 30px 0;
+    position: relative;
+}
+
+.text-content blockquote::before {
+    position: absolute;
+    content: open-quote;
+    font-size: 10rem;
+    bottom: 100%;
+    transform: translateY(80%);
+    left: 0;
+    font-weight: 700;
+    opacity: .05;
+}
+
+.text-content blockquote p {
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+    line-height: 32px;
+}
+
+.text-content blockquote p::first-letter {padding-left: 50px;}
+
+.text-content ul {margin: 15px 0 15px 25px;}
+.text-content ul li {
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+}
+.text-content ul li + li {margin-top: 10px;}
+
+.text-content ul li:before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #000;
+    top: 5px;
+    left: 0;
+}
+/* responsive */
+@media(max-width: 1199px) {
+    .fun-facts::before,
+    .fun-facts::after {border-radius: 0;}
+    .fun-facts > h2 {font-size: 150px}
+}
+@media(max-width: 767px) {
+    .fun-facts {padding: 50px 0;}
+    .fun-facts > h2 {
+        font-size: 100px;
+        width: 100%;
+        white-space: normal;
+    }
+}
+@media(max-width: 575px) {
+    .fun-fact {
+        max-width: 100%;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .fun-facts::before, .fun-facts::after {display: none;}
+    .fun-facts {
+        padding: 30px 0 50px;
+        background: #1d3557;
+    }
+    .fun-facts > h2 {
+        font-size: 100px;
+        text-align: center;
+        inset: initial;
+        transform: translate(0);
+        position: relative;
+    }
+}
+
+@media(max-width: 991px) {
+    aside .blog-widget {padding: 15px}
+    aside {margin-bottom: 50px;}
+}
+
+@media(max-width: 414px) {
+    .fun-facts > h2 {font-size: 80px}
+}
